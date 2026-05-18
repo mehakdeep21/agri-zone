@@ -11,7 +11,7 @@ function loginUser(){
         document.getElementById("loginMsg").innerHTML = "✅ Login Successful...";
 
         setTimeout(function(){
-            window.location.href = "i.html";
+            window.location.href = "index.html";
         },1000);
 
     }else{
