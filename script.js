@@ -251,5 +251,5 @@ window.onclick = function(e){
 
 function logoutUser() {
     localStorage.removeItem("loggedInUser");
-    window.location.href = "i.html";
+    window.location.href = "index.html";
 }
