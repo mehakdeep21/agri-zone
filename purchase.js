@@ -38,13 +38,13 @@ function submitOrder(){
 
     allOrders.push(orderDetails);
 
-    localStorage.setItem("agriOrders", JSON.stringify(allOrders));
+    localStorage.setItem("orders", JSON.stringify(allOrders));
 
     document.getElementById("orderMsg").innerHTML =
     "✅ Purchase Request Submitted Successfully.<br>Order forwarded to Agri Zone Partner Dealer Network.";
 
     setTimeout(()=>{
-        window.location.href = "products.html";
+        window.location.href = "cart.html";
     },2500);
 }
 
