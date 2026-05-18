@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agri Zone Products Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="logo-area">
+            <h2>AGRI ZONE</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="product-hero">
+    <h1>🌾 Agri Zone Partner Marketplace</h1>
+    <p>Trusted Agriculture Products from Our Partner Brands & Dealers</p>
+</section>
+<div class="product-search-box">
+    <input type="text" id="searchProduct" placeholder="Search Agriculture Products..." onkeyup="filterProducts()">
+</div>
+<section class="products-container">
+
+    <div class="product-card">
+        <img src="seed.jpg">
+        <h3>Premium Hybrid Seeds</h3>
+        <p>Top germination crop seeds from trusted agriculture companies.</p>
+        <button onclick="buyProduct('Premium Hybrid Seeds')">Buy Now</button>
+        <button onclick="addToCart('Premium Hybrid Seeds')">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="imp.webp">
+        <h3>Farm Implements</h3>
+        <p>Rotavator, Cultivator, Sprayer, Seed Drill and more tools.</p>
+        <button onclick="buyProduct('Farm Implements')">Buy Now</button>
+        <button onclick="addToCart('Farm Implements')">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="fer.webp">
+        <h3>Organic Fertilizers</h3>
+        <p>NPK, Bio Compost, Micronutrients and Soil Booster range.</p>
+        <button onclick="buyProduct('Organic Fertilizers')">Buy Now</button>
+        <button onclick="addToCart('Organic Fertilizers')">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="irri.webp">
+        <h3>Irrigation Pipes</h3>
+        <p>HDPE pipes, drip irrigation systems and water flow solutions.</p>
+        <button onclick="buyProduct('Irrigation Pipes')">Buy Now</button>
+        <button onclick="addToCart('Irrigation Pipes')">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="pes.jpg">
+        <h3>Pesticides & Crop Care</h3>
+        <p>Trusted crop protection chemicals and bio pesticides.</p>
+        <button onclick="buyProduct('Pesticides & Crop Care')">Buy Now</button>
+        <button onclick="addToCart('Pesticides & Crop Care')">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="harv.webp">
+        <h3>Harvesting Tools</h3>
+        <p>Sickles, cutters, threshers and post-harvest essentials.</p>
+        <button onclick="buyProduct('Harvesting Tools')">Buy Now</button>
+        <button onclick="addToCart('Harvesting Tools')">Add to Cart</button>
+    </div>
+
+</section>
+
+<section class="affiliate-note">
+    <h3>🤝 Partner Commerce Model</h3>
+    <p>
+        Agri Zone does not directly manufacture products. We collaborate with major agriculture brands,
+        dealers and distributors. Farmers place purchase requests through our portal and our registered
+        partners fulfill the order. Agri Zone receives service commission on every successful transaction.
+    </p>
+</section>
+
+<a href="i.html" class="simple-back-btn">⬅ Back to Home</a>
+
+<script src="product.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agri Zone Purchase Request</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* PURCHASE PAGE */
+.purchase-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 0;
+}
+
+.purchase-box{
+    width:420px;
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    text-align:center;
+}
+
+.purchase-box h2{
+    margin-bottom:20px;
+    color:#1b4332;
+}
+
+.purchase-box input,
+.purchase-box select{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.purchase-box button{
+    width:100%;
+    padding:12px;
+    background:#1b4332;
+    color:white;
+    border:none;
+    border-radius:8px;
+    margin-top:15px;
+    cursor:pointer;
+}
+
+.purchase-box button:hover{
+    background:#2d6a4f;
+}
+
+#orderMsg{
+    margin-top:15px;
+    font-weight:600;
+    color:green;
+}
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="logo-area">
+            <h2>AGRI ZONE</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="purchase-page">
+    <div class="purchase-box">
+        <h2>🛒 Product Purchase Request</h2>
+
+        <input type="text" id="farmerName" placeholder="Farmer Full Name">
+        <input type="text" id="mobile" placeholder="Mobile Number">
+        <input type="text" id="address" placeholder="Village / Address">
+
+        <input type="text" id="productName" readonly>
+
+        <input type="number" id="quantity" placeholder="Required Quantity">
+
+        <select id="brand">
+            <option>Select Preferred Brand</option>
+            <option>Mahindra Agri</option>
+            <option>UPL Agriculture</option>
+            <option>Syngenta</option>
+            <option>Bayer Crop Science</option>
+            <option>Local Dealer Recommendation</option>
+        </select>
+
+        <select id="payment">
+            <option>Select Payment Mode</option>
+            <option>Cash on Delivery</option>
+            <option>UPI Payment</option>
+            <option>Bank Transfer</option>
+            <option>Dealer Finance</option>
+        </select>
+
+        <button onclick="submitOrder()">Submit Purchase Request</button>
+
+        <div id="orderMsg"></div>
+    </div>
+</section>
+
+<script src="purchase.js"></script>
+<a href="products.html" class="simple-back-btn">⬅ Back</a>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agri Zone - Smart Agriculture Portal</title>
+    <link rel="icon" href="i8.png">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+ 
+<!-- NAVBAR -->
+<header>
+    <div class="navbar">
+        <div class="logo-area">
+            <h2>AGRI ZONE</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="lease.html">Land Lease</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="user-menu">
+                  <a href="login.html" id="userNav">Login</a>
+                  <div id="dropdown" class="dropdown">
+                  <button onclick="logoutUser()">Logout</button>
+                </div></li>
+                <li><a href="cart.html">🛒 My Cart</a></li>
+                
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h1>Future of Smart Farming Starts Here</h1>
+        <p>Empowering Farmers with Live Weather, Tractor Intelligence, Crop Knowledge and Nearby Agri Resources.</p>
+        <a href="https://agriwelfare.gov.in/" target="_blank">
+            <button>Explore Government Agriculture Portal</button>
+        </a>
+    </div>
+</section>
+
+<!-- LIVE WEATHER -->
+<section class="premium-box" id="weather">
+    <h2>🌦 Live Farm Weather Detector</h2>
+    <p>Get real-time weather conditions of your farm using GPS.</p>
+    <button onclick="getWeather()">Detect My Farm Weather</button>
+    <div id="weatherResult"></div>
+</section>
+
+<!-- TRACTOR SMART COMPARE -->
+<section class="premium-box" id="tractor">
+    <h2>🚜 Smart Tractor Comparison Engine</h2>
+    <p>Select a tractor and get live specifications instantly.</p>
+    
+    <select id="tractorSelect" onchange="showTractorData()">
+        <option value="">Choose Tractor Model</option>
+        <option value="mahindra">Mahindra 575 DI XP Plus</option>
+        <option value="john">John Deere 5050D</option>
+        <option value="sonalika">Sonalika DI 745 III</option>
+        <option value="swaraj">Swaraj 744 FE</option>
+    </select>
+
+    <div id="tractorData"></div>
+</section>
+
+<!-- NEARBY SHOPS -->
+<section class="premium-box" id="shops">
+    <h2>📍 Nearby Agriculture Dealer Finder</h2>
+    <p>Find local seed stores, machinery dealers and fertilizer suppliers.</p>
+    <button onclick="findLocalShops()">Find Nearby Agriculture Shops</button>
+    <div id="shopResults"></div>
+</section>
+
+<!-- AGRI KNOWLEDGE -->
+<section class="agri-info" id="knowledge">
+    <h2>Agriculture Knowledge Center</h2>
+
+    <div class="agri-grid">
+        <a href="https://agrimachinery.nic.in/" target="_blank" class="agri-card">
+            <img src="img7.jpeg">
+            <h3>Farm Implements</h3>
+            <p>Modern machines improving speed and productivity of farming.</p>
+        </a>
+
+        <a href="https://www.apnikheti.com/en/pn/crops-category/crops" target="_blank" class="agri-card">
+            <img src="img6.jpeg">
+            <h3>Crop Information</h3>
+            <p>Official crop guidance, crop seasons and best farming practices.</p>
+        </a>
+
+        <a href="https://www.soilhealth.dac.gov.in/home" target="_blank" class="agri-card">
+            <img src="img8.jpeg">
+            <h3>Soil Health</h3>
+            <p>Check nutrients, soil quality and government soil health support.</p>
+        </a>
+    </div>
+</section>
+
+<!-- STATIC TRACTOR TABLE -->
+<section class="compare-section">
+    <h2>📈 Live Tractor Market Price Monitor</h2>
+    <p>Dynamic estimated ex-showroom tractor prices updated automatically.</p>
+
+    <div id="livePriceBox"></div>
+</section>
+
+<!-- SOCIAL -->
+<section class="social-media">
+    <a href="https://facebook.com" target="_blank"><img src="ff.webp"></a>
+    <a href="https://instagram.com" target="_blank"><img src="i.avif"></a>
+    <a href="https://youtube.com" target="_blank"><img src="y.jpg"></a>
+</section>
+
+<footer id="footer">
+    <h3>AGRI ZONE © 2026</h3>
+    <p>Smart Agriculture Digital Companion for Modern Indian Farmers</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
